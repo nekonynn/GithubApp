@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+    <SwitchPreference
+        app:key="@string/key_dark_mode"
+        app:title="@string/title_dark_mode"
+        app:icon="@drawable/ic_dark_mode" />
+</androidx.preference.PreferenceScreen>

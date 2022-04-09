@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/default_margin"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/errorResult"
+            style="@style/Text.Title.Centered"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/default_small_margin"
+            android:text="@string/text_error"
+            android:textColor="@color/primary_dark"/>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/retryButton"
+            style="@style/Button"
+            android:text="@string/button_retry"/>
+    </LinearLayout>
+</layout>

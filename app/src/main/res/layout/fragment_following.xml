@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="state"
+            type="java.lang.String" />
+        <import type="tech.nekonyan.githubapp.util.Constants" />
+        <import type="android.view.View" />
+    </data>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.activity.MainActivity">
+        <include
+            android:id="@+id/shimmerLayout"
+            layout="@layout/layout_loading_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:visibility="@{state.equals(Constants.LOADING) ? View.VISIBLE : View.GONE}" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvUser"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="@{state.equals(Constants.SUCCESS) ? View.VISIBLE : View.GONE}"
+            tools:listitem="@layout/item_user"
+            tools:itemCount="10"/>
+        <TextView
+            android:id="@+id/emptyText"
+            style="@style/Text.Title.Centered"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/default_margin"
+            android:textSize="16sp"
+            android:text="@string/text_empty_following"
+            android:visibility="@{state.equals(Constants.EMPTY) ? View.VISIBLE : View.GONE}"
+            tools:visibility="gone"/>
+        <include
+            android:id="@+id/errorLayout"
+            layout="@layout/layout_error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/default_margin"
+            android:orientation="vertical"
+            android:visibility="@{state.equals(Constants.ERROR) ? View.VISIBLE : View.GONE}"
+            tools:visibility="gone" />
+    </RelativeLayout>
+</layout>

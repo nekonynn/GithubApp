@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Github Users API Practice</string>
+
+    <string name="title_activity_list">Github Users</string>
+    <string name="title_activity_detail">Detail User</string>
+    <string name="title_activity_preview">Show Avatar</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="title_fragment_following">Following</string>
+    <string name="title_fragment_followers">Followers</string>
+    <string name="title_fragment_list">List</string>
+    <string name="title_fragment_favorite">Favorites</string>
+
+    <string name="title_dark_mode">Dark Mode</string>
+    <string name="key_dark_mode">dark_mode</string>
+
+    <string name="title">Github User</string>
+    <string name="cd_image">Image</string>
+    <string name="cd_logo">logo</string>
+    <string name="cd_fab_fav">favorite button</string>
+
+    <string name="hint_search">Search</string>
+    <string name="button_retry">Retry</string>
+    <string name="button_settings">Settings</string>
+
+    <string name="text_error">Error occurred.</string>
+    <string name="text_empty_search">There\'s no result for "%s".</string>
+    <string name="text_empty_favorite">There\'s no favorite user yet!</string>
+    <string name="text_empty_following">This user doesn\'t have any following.</string>
+    <string name="text_empty_followers">This user doesn\'t have any followers.</string>
+
+    <string name="toast_error_fav">Failed to favorite the user.</string>
+</resources>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:scrollHorizontally">false</item>
+    </style>
+    <!--<style name="Text.Centered" parent="Text">
+        <item name="android:textAlignment">center</item>
+        <item name="android:layout_gravity">center</item>
+    </style>-->
+    <style name="Text.Drawable" parent="Text">
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:drawablePadding">@dimen/drawable_padding</item>
+    </style>
+    <!--<style name="Text.Drawable.Centered" parent="Text.Drawable">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:gravity">center</item>
+    </style>-->
+    <style name="Text.Title" parent="Text">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="Text.Title.Centered" parent="Text.Title">
+        <item name="android:textAlignment">center</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+    <style name="Text.Title.Item" parent="Text.Title">
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="ShapeAppearanceOverlay.App.CircleImage" parent="">
+        <item name="cornerSize">50%</item>
+    </style>
+    <style name="Button" parent="Widget.MaterialComponents.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="cornerRadius">6dp</item>
+        <item name="elevation">4dp</item>
+    </style>
+</resources>
